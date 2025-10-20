@@ -1,8 +1,10 @@
 # WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection
 
 ## Getting Started
-### Setup Environment
+
+### 1 Setup Environment
 You need to create the running environment by [Anaconda](https://www.anaconda.com/).
+
 First, create and activate the environment:
 
 ```bash
@@ -25,10 +27,11 @@ Then install the requirements:
 pip install -r requirements.txt
 ```
 
-### Datasets
+### 2 Download Datasets
 
 Our experiments are conducted on two new and challenging benchmarks:  
-**Deepfake-Eval-2024** ([https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024](https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024)) and  
+
+**Deepfake-Eval-2024** ([https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024](https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024)) 
 **SpoofCeleb** ([https://huggingface.co/datasets/jungjee/spoofceleb](https://huggingface.co/datasets/jungjee/spoofceleb)).
 
 
