@@ -27,7 +27,7 @@ Then install the requirements:
 pip install -r requirements.txt
 ```
 
-### 2 Download Datasets
+### 2 Download Deepfake-Eval-2024 and SpoofCeleb Datasets
 
 Our experiments are conducted on two new and challenging benchmarks:  
 
