@@ -1,6 +1,6 @@
 # WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.05305v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net)
 
 ## Getting Started
 
