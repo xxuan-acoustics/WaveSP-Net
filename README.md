@@ -45,7 +45,7 @@ Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/Wav
 
 ### Citation
 
-If you find our repository valuable for your work, please consider giving a star to this repo and citing our paper:
+If you find our repository valuable for your work, please consider citing our paper:
 
 ```bibtex
 @misc{xuan2025wavespnet,
