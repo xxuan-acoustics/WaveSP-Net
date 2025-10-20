@@ -32,6 +32,8 @@ pip install -r requirements.txt
 Our experiments are conducted on two new and challenging benchmarks:  
 
 **Deepfake-Eval-2024** ([https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024](https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024)) 
+
+
 **SpoofCeleb** ([https://huggingface.co/datasets/jungjee/spoofceleb](https://huggingface.co/datasets/jungjee/spoofceleb)).
 
 
