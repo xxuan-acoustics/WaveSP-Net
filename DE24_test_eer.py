@@ -25,9 +25,9 @@ def init():
                                  'WaveSP-Net'])
 
     parser.add_argument("--df24_eval_audio", type=str, help="Path to the evaluation audio for df24 dataset",
-                        default='/home/xxuan/speech-deepfake/All-Type-ADD/datasets/DF24Datasets/test_audio')   
+                        default='/home/xxuan/speech-deepfake/datasets/DF24Datasets/test_audio')   
     parser.add_argument("--df24_eval_label", type=str, help="Path to the evaluation label for df24 dataset",
-                        default="/home/xxuan/speech-deepfake/All-Type-ADD/protocals/df24_protocols/df24_test_protocol.csv") 
+                        default="/home/xxuan/speech-deepfake/protocals/df24_protocols/df24_test_protocol.csv") 
     
     temp_args, _ = parser.parse_known_args()
     
