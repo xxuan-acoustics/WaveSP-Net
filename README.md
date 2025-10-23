@@ -34,6 +34,13 @@ Our experiments are conducted on two new and challenging benchmarks:
 
 ### 4 Train
 
+```bash
+python Deepfake-Eval-24_train.py
+```
+
+```bash
+python SpoofCeleb_train.py
+```
 
 ### 5 Test
 
