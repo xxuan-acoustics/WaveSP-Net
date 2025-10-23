@@ -13,30 +13,29 @@ First, create and activate the environment:
 conda create -n WaveSP-Net python=3.8
 conda activate WaveSP-Net
 ```
-
-Install fairseq:
-
-```bash
-git clone https://github.com/facebookresearch/fairseq.git fairseq_dir
-cd fairseq_dir
-git checkout a54021305d6b3c
-pip install --editable ./
-```
-
 Then install the requirements:
 
 ```bash
 pip install -r requirements.txt
 ```
+### 2 Download XLSR front-end model
 
-### 2 Download Deepfake-Eval-2024 and SpoofCeleb Datasets
+```bash
+huggingface-cli download facebook/wav2vec2-xls-r-300m --local-dir yourpath/huggingface/wav2vec2-xls-r-300m/
+```
+
+### 3 Download Deepfake-Eval-2024 and SpoofCeleb Datasets
 
 Our experiments are conducted on two new and challenging benchmarks:  
 
 **Deepfake-Eval-2024** ([https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024](https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024)) 
 
-
 **SpoofCeleb** ([https://huggingface.co/datasets/jungjee/spoofceleb](https://huggingface.co/datasets/jungjee/spoofceleb)).
+
+### 4 Train
+
+
+### 5 Test
 
 
 ### WaveSP-Net on Hugging Face 🤗
