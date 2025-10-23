@@ -34,9 +34,9 @@ Our experiments are conducted on two new and challenging benchmarks:
 
 ### 4 Configure hyperparameters
 
-Configure hyperparameters in config_df24.py and config_spoofceleb.py.
+Configure hyperparameters in 'config_df24.py' and 'config_spoofceleb.py'.
 
-### 4 Train
+### 5 Train
 
 ```bash
 python Deepfake-Eval-24_train.py
@@ -46,7 +46,7 @@ python Deepfake-Eval-24_train.py
 python SpoofCeleb_train.py
 ```
 
-### 5 Test
+### 6 Test
 
 ```bash
 python Deepfake-Eval-24_test.py
@@ -57,12 +57,12 @@ python SpoofCeleb_test.py
 ```
 
 
-### WaveSP-Net on Hugging Face 🤗
+## WaveSP-Net on Hugging Face 🤗
 
 Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/WaveSP-Net](https://huggingface.co/xxuan-speech/WaveSP-Net)
 
 
-### Citation
+## Citation
 
 If you find our repository valuable for your work, please consider citing our paper:
 
