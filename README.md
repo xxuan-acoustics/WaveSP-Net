@@ -24,13 +24,17 @@ pip install -r requirements.txt
 huggingface-cli download facebook/wav2vec2-xls-r-300m --local-dir yourpath/huggingface/wav2vec2-xls-r-300m/
 ```
 
-### 3 Download Deepfake-Eval-2024 and SpoofCeleb Datasets
+### 3 Download Deepfake-Eval-2024 and SpoofCeleb Datasets and Protocals
 
 Our experiments are conducted on two new and challenging benchmarks:  
 
 **Deepfake-Eval-2024** ([https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024](https://huggingface.co/datasets/nuriachandra/Deepfake-Eval-2024)) 
 
 **SpoofCeleb** ([https://huggingface.co/datasets/jungjee/spoofceleb](https://huggingface.co/datasets/jungjee/spoofceleb)).
+
+### 4 Configure hyperparameters
+
+Configure hyperparameters in config_df24.py and config_spoofceleb.py.
 
 ### 4 Train
 
@@ -43,6 +47,14 @@ python SpoofCeleb_train.py
 ```
 
 ### 5 Test
+
+```bash
+python Deepfake-Eval-24_test.py
+```
+
+```bash
+python SpoofCeleb_test.py
+```
 
 
 ### WaveSP-Net on Hugging Face 🤗
