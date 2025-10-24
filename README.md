@@ -1,6 +1,15 @@
 # WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2510.05305v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.05305v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net) [![Website](https://img.shields.io/badge/Website-%F0%9F%8C%90-9cf)](https://xxuan-acoustics.github.io/WaveSP-Net/)
+
+## WaveSP-Net on Hugging Face 🤗
+
+Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/WaveSP-Net](https://huggingface.co/xxuan-speech/WaveSP-Net)
+
+## 🎧 Demo Page
+
+We provide an online demo website for WaveSP-Net:  [![Website](https://img.shields.io/badge/Website-%F0%9F%8C%90-9cf)](https://xxuan-acoustics.github.io/WaveSP-Net/)
+🔗 **Demo:** [https://xxuan-acoustics.github.io/WaveSP-Net/](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
 ## Getting Started
 
@@ -55,17 +64,6 @@ python Deepfake-Eval-24_test.py
 ```bash
 python SpoofCeleb_test.py
 ```
-
-
-## WaveSP-Net on Hugging Face 🤗
-
-Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/WaveSP-Net](https://huggingface.co/xxuan-speech/WaveSP-Net)
-
-
-## 🎧 Demo Page
-
-We provide an online demo website for WaveSP-Net:  
-🔗 **Demo:** [https://xxuan-acoustics.github.io/WaveSP-Net/](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
 
 
