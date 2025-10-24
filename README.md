@@ -61,6 +61,11 @@ python SpoofCeleb_test.py
 
 Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/WaveSP-Net](https://huggingface.co/xxuan-speech/WaveSP-Net)
 
+## Demo
+
+<audio controls src="demo/Real0001.wav"></audio>
+<audio controls src="demo/Fake0001.wav"></audio>
+
 
 ## Citation
 
