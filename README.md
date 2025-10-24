@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2510.05305v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net) [![Website](https://img.shields.io/badge/Website-%F0%9F%8C%90-9cf)](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
-## WaveSP-Net on Hugging Face 🤗
+## WaveSP-Net on Hugging Face 
 
 Our model is available on Hugging Face: [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net)
 
