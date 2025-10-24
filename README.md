@@ -46,7 +46,7 @@ Our experiments are conducted on two new and challenging benchmarks:
 
 ### 4 Configure hyperparameters
 
-Configure hyperparameters in 'config_df24.py' and 'config_spoofceleb.py'.
+Configure hyperparameters in `config_df24.py` and `config_spoofceleb.py`.
 
 ### 5 Train
 
