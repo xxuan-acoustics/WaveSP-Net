@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WaveSP-Net Audio Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f9fb;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    .page-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .paper-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+      text-align: center;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .authors {
+      text-align: center;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.4;
+    }
+
+    .affils {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.4;
+      margin-top: 8px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title span.badge {
+      background: #111827;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1;
+      padding: 4px 8px;
+      border-radius: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .compare-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .sample-card {
+      flex: 1 1 360px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+      border: 1px solid rgba(0,0,0,0.05);
+      padding: 20px 20px 24px;
+      min-width: 320px;
+    }
+
+    .sample-header {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tag-real {
+      background: #10b98120;
+      color: #065f46;
+      border: 1px solid #10b98160;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 6px;
+      border-radius: 6px;
+      line-height: 1.2;
+    }
+
+    .tag-fake {
+      background: #ef444420;
+      color: #7f1d1d;
+      border: 1px solid #ef444480;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 6px;
+      border-radius: 6px;
+      line-height: 1.2;
+    }
+
+    audio {
+      width: 100%;
+      margin: 8px 0 16px;
+    }
+
+    .subcaption {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .prediction {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1f2937;
+      background: #f3f4f6;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .img-block {
+      background: #f9fafb;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .img-block img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .fig-label {
+      font-size: 12px;
+      color: #4b5563;
+      margin-top: 6px;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .citation-block {
+      background: #111827;
+      color: #f9fafb;
+      border-radius: 16px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 24px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-x: auto;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #6b7280;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 20px 16px;
+      }
+      .paper-title {
+        font-size: 17px;
+      }
+      .authors {
+        font-size: 13px;
+      }
+      .affils {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- ================= HEADER / PAPER INFO ================= -->
+    <header>
+      <div class="paper-title">
+        WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning<br>
+        for Speech Deepfake Detection
+      </div>
+
+      <div class="authors">
+        Xi Xuan<sup>1</sup>, Xuechen Liu<sup>2</sup>, Wenxin Zhang<sup>3,5</sup>, Yi-Cheng Lin<sup>4</sup>,
+        Xiaojian Lin<sup>6</sup>, Tomi Kinnunen<sup>1</sup>
+      </div>
+
+      <div class="affils">
+        <sup>1</sup> University of Eastern Finland &nbsp;&nbsp; <sup>2</sup> National Institute of Informatics<br>
+        <sup>3</sup> University of Chinese Academy of Sciences &nbsp;&nbsp; <sup>4</sup> National Taiwan University<br>
+        <sup>5</sup> University of Toronto &nbsp;&nbsp; <sup>6</sup> Tsinghua University
+      </div>
+    </header>
+
+    <!-- ================= AUDIO + VISUAL COMPARISON ================= -->
+    <div class="section-title">
+      <span class="badge">DEMO</span>
+      <span>Real vs Fake Audio Samples</span>
+    </div>
+
+    <div class="compare-grid">
+
+      <!-- Real card -->
+      <div class="sample-card">
+        <div class="sample-header">
+          <span>Real Speech Sample</span>
+          <span class="tag-real">REAL</span>
+        </div>
+
+        <audio controls>
+          <source src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Real0001.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="prediction">
+          🔹 Real0001.wav – Detection Result: Real <br>
+          (WaveSP-Net inference fake probability: 0.0323)
+        </div>
+
+        <div class="subcaption">
+          Human voice, genuine recording.
+        </div>
+
+        <div class="img-block">
+          <img src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/real_waveform.png" alt="Real waveform">
+          <div class="fig-label">Figure R1. Waveform (Real)</div>
+        </div>
+
+        <div class="img-block">
+          <img src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/real_spectrogram.png" alt="Real spectrogram">
+          <div class="fig-label">Figure R2. Spectrogram (Real)</div>
+        </div>
+      </div>
+
+      <!-- Fake card -->
+      <div class="sample-card">
+        <div class="sample-header">
+          <span>Fake Speech Sample</span>
+          <span class="tag-fake">FAKE</span>
+        </div>
+
+        <audio controls>
+          <source src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Fake0001.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="prediction">
+          🔸 Fake0001.wav – Detection Result: Fake <br>
+          (WaveSP-Net inference fake probability: 0.8272) 
+        </div>
+
+        <div class="subcaption">
+          AI-generated / synthesized voice.
+        </div>
+
+        <div class="img-block">
+          <img src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/fake_waveform.png" alt="Fake waveform">
+          <div class="fig-label">Figure F1. Waveform (Fake)</div>
+        </div>
+
+        <div class="img-block">
+          <img src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/fake_spectrogram.png" alt="Fake spectrogram">
+          <div class="fig-label">Figure F2. Spectrogram (Fake)</div>
+        </div>
+      </div>
+
+    </div> <!-- /compare-grid -->
+
+    <!-- ================= CITATION ================= -->
+    <div class="section-title">
+      <span class="badge">CITATION</span>
+      <span>Reference</span>
+    </div>
+
+    <div class="citation-block">
+@misc{xuan2025wavespnet,
+      title={WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection},
+      author={Xi Xuan and Xuechen Liu and Wenxin Zhang and Yi-Cheng Lin and Xiaojian Lin and Tomi Kinnunen},
+      year={2025},
+      eprint={2510.05305},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2510.05305},
+}
+    </div>
+
+    <footer>
+      WaveSP-Net Demo Page · Hosted on GitHub Pages<br>
+      &copy; 2025 xxuan-acoustics
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+</body>
+</html>
