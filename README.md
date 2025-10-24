@@ -70,7 +70,7 @@ python SpoofCeleb_test.py
 
 ### 7 Inference on a single wav file
 
-You can use `demo/demo.ipynb` to test a single .wav file by updating its path and performing inference to estimate whether the audio is real or fake.
+You can use `demo/demo.ipynb` to test a single .wav file by replacing its path and performing inference to estimate whether the audio is real or fake.
 
 
 ## Citation
