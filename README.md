@@ -64,9 +64,7 @@ Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/Wav
 
 ## 🎧 Demo Page
 
-We provide an online demo showcasing **WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection**.  
-The page includes real vs fake speech samples, waveform and spectrogram visualizations, and citation details.
-
+We provide an online demo website for WaveSP-Net:  
 🔗 **Demo:** [https://xxuan-acoustics.github.io/WaveSP-Net/](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
 
