@@ -61,13 +61,13 @@ python SpoofCeleb_test.py
 
 Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/WaveSP-Net](https://huggingface.co/xxuan-speech/WaveSP-Net)
 
-## Demo
 
-**Real audio sample:** [Real0001.wav](https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Real0001.wav)
+## 🎧 Demo Page
 
-**Fake audio sample:** [Fake0001.wav](https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Fake0001.wav)
+We provide an online demo showcasing **WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection**.  
+The page includes real vs fake speech samples, waveform and spectrogram visualizations, and citation details.
 
-
+🔗 **Demo:** [https://xxuan-acoustics.github.io/WaveSP-Net/](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
 
 
