@@ -63,8 +63,14 @@ Our model is available on Hugging Face: [https://huggingface.co/xxuan-speech/Wav
 
 ## Demo
 
-<audio controls src="/demo/Real0001.wav"></audio>
-<audio controls src="/demo/Fake0001.wav"></audio>
+<audio controls src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Real0001.wav">
+  Your browser does not support the audio element.
+</audio>
+
+<audio controls src="https://raw.githubusercontent.com/xxuan-acoustics/WaveSP-Net/master/demo/Fake0001.wav">
+  Your browser does not support the audio element.
+</audio>
+
 
 
 ## Citation
