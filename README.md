@@ -4,7 +4,7 @@
 
 ### Xi Xuan, Xuechen Liu, Wenxin Zhang, Yi-Cheng Lin, Xiaojian Lin, Tomi Kinnunen
 
-## This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉.
+#### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉.
 
 ## WaveSP-Net on Hugging Face 
 
