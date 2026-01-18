@@ -80,7 +80,7 @@ If you find our repository valuable for your work, please consider citing our pa
 ```bibtex
 @article{xuanwavesp,
   title={WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection},
-  author={Xuan, Xi and others},
+  author={Xi Xuan and Xuechen Liu and Wenxin Zhang and Yi-Cheng Lin and Xiaojian Lin and Tomi Kinnunen},
   journal={ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year={2026},
   organization={IEEE}
