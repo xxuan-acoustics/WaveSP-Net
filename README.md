@@ -82,10 +82,10 @@ You can use `demo/demo.ipynb` to test a single .wav file by replacing its path a
 If you find our repository valuable for your work, please consider citing our paper:
 
 ```bibtex
-@article{xuanwavesp,
+@inproceedings{xuan2025wavesp,
   title={WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection},
   author={Xi Xuan and Xuechen Liu and Wenxin Zhang and Yi-Cheng Lin and Xiaojian Lin and Tomi Kinnunen},
-  journal={ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  booktitle={ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year={2026},
   organization={IEEE}
 }
