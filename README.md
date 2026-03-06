@@ -18,6 +18,8 @@ We provide an online demo website for WaveSP-Net:  [![Website](https://img.shiel
 
 🔗 **Demo:** [https://xxuan-acoustics.github.io/WaveSP-Net/](https://xxuan-acoustics.github.io/WaveSP-Net/)
 
+![](./demo/fig1.png)
+
 ## Getting Started
 
 ### 1 Setup Environment
