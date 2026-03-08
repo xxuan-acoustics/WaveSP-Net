@@ -4,7 +4,16 @@
 
 ### Xi Xuan, Xuechen Liu, Wenxin Zhang, Yi-Cheng Lin, Xiaojian Lin, Tomi Kinnunen
 
-#### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉 🇪🇸.
+#### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉.
+---
+I will be giving an online talk at [SpeechHome (语音之家)](https://mp.weixin.qq.com/s/OQ_sZnb8YgSL0WEwBCvWYg). Welcome to join! 🎉
+
+📅 Presentation Details:
+*   **🎙️ Speaker:** Xi Xuan
+*   **🗓️ Date:** Monday, March 9th, 2026
+*   **🕐 Time:** 19:00 – 19:30 (Beijing Time)
+*   **📍 Location:** Online, SpeechHome (语音之家) 
+---
 
 ## WaveSP-Net on Hugging Face 
 
