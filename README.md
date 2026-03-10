@@ -6,7 +6,7 @@
 
 #### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉.
 ---
-I will be giving an online talk at [SpeechHome (语音之家)](https://mp.weixin.qq.com/s/OQ_sZnb8YgSL0WEwBCvWYg). Welcome to join! 🎉
+I will be giving an online talk at [SpeechHome (语音之家)](https://mp.weixin.qq.com/s/OQ_sZnb8YgSL0WEwBCvWYg). Welcome to join! 🎉 [Slides](docs/WaveSP-Net_Slide.pdf)
 
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan
