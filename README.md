@@ -1,10 +1,14 @@
 ![image](https://github.com/xxuan-acoustics/WaveSP-Net/blob/master/docs/title.png)
 
+<div align="center">
+
 [![arXiv](https://img.shields.io/badge/arXiv-2510.05305v1-b31b1b.svg)](https://arxiv.org/abs/2510.05305) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/xxuan-speech/WaveSP-Net) [![Website](https://img.shields.io/badge/Website-%F0%9F%8C%90-9cf)](https://xxuan-acoustics.github.io/WaveSP-Net/) [![Poster](https://img.shields.io/badge/Poster-ICASSP%202026-1e3a8a.svg)](https://drive.google.com/file/d/1spoFAn2HMQXj8jmLoYdnrFgmZiDSius5/view?usp=drive_link)
 
-### Xi Xuan, Xuechen Liu, Wenxin Zhang, Yi-Cheng Lin, Xiaojian Lin, Tomi Kinnunen
+##### Xi Xuan, Xuechen Liu, Wenxin Zhang, Yi-Cheng Lin, Xiaojian Lin, Tomi Kinnunen
 
-#### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉.
+#### This source code is for the WaveSP-Net accepted by ICASSP 2026 🎉
+
+</div>
 ---
 I will be giving an online talk at [SpeechHome (语音之家)](https://mp.weixin.qq.com/s/OQ_sZnb8YgSL0WEwBCvWYg). Welcome to join! 🎉 [Slides](docs/WaveSP-Net_Slide.pdf)
 
